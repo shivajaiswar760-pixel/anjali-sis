@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anjali Sis 💗</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#e5d5ff,#cceeff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    color:#4b244a;
+}
+
+.container{
+    width:92%;
+    max-width:600px;
+    background:rgba(255,255,255,0.82);
+    backdrop-filter:blur(10px);
+    border-radius:30px;
+    padding:28px 20px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    animation:pop 1s ease;
+}
+
+@keyframes pop{
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+h1{
+    font-size:38px;
+    margin:5px 0 10px;
+}
+
+.subtitle{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    padding:20px;
+    margin:18px 0;
+    box-shadow:0 7px 20px rgba(0,0,0,.08);
+}
+
+.message{
+    font-size:18px;
+    line-height:1.6;
+}
+
+button{
+    border:none;
+    padding:14px 22px;
+    margin:8px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#ff6fae;
+    color:white;
+    box-shadow:0 6px 15px rgba(255,105,170,.35);
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+#surprise{
+    display:none;
+    margin-top:18px;
+    font-size:19px;
+    line-height:1.6;
+    animation:pop .6s ease;
+}
+
+.love{
+    font-size:45px;
+    animation:heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.18);}
+}
+
+.floating{
+    position:fixed;
+    font-size:25px;
+    animation:float 6s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh) rotate(0deg);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-10vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+#crazyText{
+    min-height:30px;
+    font-weight:bold;
+    font-size:19px;
+}
+
+.footer{
+    margin-top:20px;
+    font-size:14px;
+    opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="love">💗</div>
+
+    <h1>Hey Anjali Sis! 👑</h1>
+
+    <div class="subtitle">
+        Welcome to the most <b>crazy & cute</b> sister website 😂💗
+    </div>
+
+    <div class="card">
+        <div class="message">
+            Dear Anjali Sis 🥹💖<br><br>
+
+            Aap normal sis nahi ho...
+            Aap ek <b>limited edition pagal + cute + caring sis</b> ho 😂👑
+            
+            <br><br>
+
+            Kabhi sweet 🍭<br>
+            Kabhi crazy 🤪<br>
+            Kabhi gussa 😤<br>
+            Aur kabhi full comedy show 😂🎭
+            
+            <br><br>
+
+            Lekin ek baat fix hai...
+            <br>
+            <b>Aap bahut special ho! 💗</b>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <h2>😂 Anjali Sis Ka Official Report</h2>
+
+        <p>👑 Sister Level: <b>9999+</b></p>
+        <p>😂 Pagalpanti: <b>Unlimited</b></p>
+        <p>💗 Cuteness: <b>Dangerously High</b></p>
+        <p>😤 Gussa: <b>Thoda zyada 😂</b></p>
+        <p>🤣 Comedy: <b>24×7 Live</b></p>
+        <p>❤️ Caring: <b>100/100</b></p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🤪 Ek Important Question</h2>
+
+        <p id="crazyText">
+            Anjali sis, aap itni cute kyun ho? 😂
+        </p>
+
+        <button onclick="changeText()">
+            Answer Dekho 👀
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🎁 Secret Surprise</h2>
+
+        <button onclick="showSurprise()">
+            Don't Click 😏😂
+        </button>
+
+        <div id="surprise">
+
+            OHHH NOOO! 😭😂<br><br>
+
+            Aapne button daba diya!!
+            <br><br>
+
+            Ab punishment ye hai ki...
+            <br>
+
+            <b>
+            Aapko hamesha khush rehna padega,
+            smile karni padegi 😁
+            aur apne cute bhai ko kabhi ignore nahi karna padega 😂💗
+            </b>
+
+            <br><br>
+
+            Deal? 🤝😎
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>💌 For My Anjali Sis</h2>
+
+        <div class="message">
+
+            Life mein bahut log milte hain,
+            kuch friends ban jaate hain,
+            kuch memories ban jaate hain...
+
+            <br><br>
+
+            Lekin kuch log
+            <b>family jaisa special place</b>
+            bana lete hain. 🥹💗
+
+            <br><br>
+
+            And you're one of those people, Anjali Sis. 👑
+
+            <br><br>
+
+            So please hamesha smile karte rehna 😊
+            kyunki aapki smile bahut precious hai. 💗
+
+            <br><br>
+
+            <b>
+            Stay crazy 🤪<br>
+            Stay cute 🥹<br>
+            Stay happy 🌸<br>
+            And always stay amazing! 👑💗
+            </b>
+
+        </div>
+
+    </div>
+
+    <button onclick="finalMessage()">
+        Last Button 😭💗
+    </button>
+
+    <p id="final"></p>
+
+    <div class="footer">
+        Made with lots of masti & pyaar 😂💗
+        <br>
+        Especially for Anjali Sis 👑
+    </div>
+
+</div>
+
+
+<script>
+
+function changeText(){
+
+    const texts = [
+
+        "Kyuki aap factory se hi cute ban ke aayi thi 😂💗",
+
+        "Shayad God ne aapko banate time extra cuteness daal di 🤭✨",
+
+        "Answer simple hai: Aap Anjali Sis ho! 😎👑",
+
+        "Warning ⚠️: Itni cuteness public place mein allowed nahi 😂",
+
+        "Actually iska answer NASA bhi nahi de sakta 🚀😂",
+
+        "Bas karo sis... itni cute hona illegal hai 😭😂💗"
+
+    ];
+
+    const random =
+        texts[Math.floor(Math.random()*texts.length)];
+
+    document.getElementById("crazyText").innerHTML = random;
+}
+
+
+function showSurprise(){
+
+    document.getElementById("surprise").style.display="block";
+
+}
+
+
+function finalMessage(){
+
+    document.getElementById("final").innerHTML =
+    "🥹💗 Anjali Sis, no matter what happens, keep smiling! 👑✨ You are genuinely special! 🤗💗";
+
+    createHeartExplosion();
+
+}
+
+
+function createHeartExplosion(){
+
+    for(let i=0;i<25;i++){
+
+        const heart=document.createElement("div");
+
+        heart.innerHTML =
+        ["💗","💖","💕","💝","✨","🌸"][Math.floor(Math.random()*6)];
+
+        heart.className="floating";
+
+        heart.style.left=Math.random()*100+"vw";
+        heart.style.animationDuration=(3+Math.random()*4)+"s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },7000);
+
+    }
+
+}
+
+
+setInterval(()=>{
+
+    const heart=document.createElement("div");
+
+    heart.innerHTML =
+    ["💗","💖","✨","🌸","😂"][Math.floor(Math.random()*5)];
+
+    heart.className="floating";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },8000);
+
+},700);
+
+
+</script>
+
+</body>
+</html>
